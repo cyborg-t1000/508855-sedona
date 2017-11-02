@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Максим Некрасов](https://up.htmlacademy.ru/htmlcss/19/user/508855).
-* Наставник: [Дмитрий Мишагин](https://htmlacademy.ru/profile/id118967).
+* Наставник: [Дмитрий Мишагин](https://up.htmlacademy.ru/htmlcss/19/user/118967).
 
 ---
 
