@@ -6,14 +6,14 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <header class="index-header">
+        <header class="main-header">
             <nav class="main-navigation">
                 <a class="main-header-logo"><img src="img/logo.svg" width="100" height="100" alt="Логотип города Седона"></a>
-                <ul class="site-navigation">
-                    <li><a href="information.html">Информация</a></li>
-                    <li><a href="media.html">Фото и видео</a></li>
-                    <li><a href="map.html">Карта штата</a></li>
-                    <li><a href="hotels.html">Гостиницы</a></li>
+                <ul class="main-menu">
+                    <li class="main-menu-item-left"><a href="information.html">Информация</a></li>
+                    <li class="main-menu-item-left"><a href="media.html">Фото и видео</a></li>
+                    <li class="main-menu-item-right"><a href="map.html">Карта штата</a></li>
+                    <li class="main-menu-item-left"><a href="hotels.html">Гостиницы</a></li>
                 </ul>
             </nav>
         </header>
@@ -69,17 +69,11 @@
             <section class="hotel-search">
                 <h2>Заинтересовались?</h2>
                 <p>Укажите предполагаемые даты поездки,<br>и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-                <form action="hotels.html">
-                    <fieldset>
-                    <legend>Поиск гостиницы в Седоне</legend>
-                        <label for="date_from">Дата заезда:</label><input type="text" name="date_from" id="date_from">
-                        <label for="date_to">Дата выезда:</label><input type="text" name="date_to" id="date_to">
-                        <label for="adults">Взрослые:</label><input type="text" name="adults" id="adults" value="1">
-                        <label for="children">Дети:</label><input type="text" name="children" id="children" value="1">
-                        <input type="submit" name="search" value="Найти">
-                    </fieldset>
-                </form>
-                <div class="map"></div>
+                <p class="hotels-button">Поиск гостиницы в Седоне</p>
+                <div class="main-hotels-form">
+                    <!-- тут будет форма -->
+                </div>
+                <div class="map"><img src="img/map.jpg" width="768" height="200" alt="Карта Аризоны"></div>
             </section>
         </main>   
         
@@ -92,7 +86,7 @@
                     <li><a class="social-button" href="#"><img src="img/youtube.png" width="50" height="50" alt="Youtube"></a></li>
                 </ul>
             </div>
-            <p class="footer-copyright">Website by <a href="http://htmlacademy.ru/"><img src="img/htmlacademy.png" width="100" height="30" alt="html academy"></a></p>
+            <p class="footer-copyright">Website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy.png" width="100" height="30" alt="html academy"></a></p>
         </footer>
     </body>
 </html>
