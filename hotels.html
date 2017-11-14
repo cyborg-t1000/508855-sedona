@@ -23,7 +23,56 @@
             
             <section class="hotels-search-form">
                 <h2 class="visually-hidden">Фильтр гостиниц</h2>
-                <!-- тут будет поисковая форма -->
+                <form class="hotel-search" action="hotels.html" method="get">
+                    <fieldset>
+                        <legend>Инфраструктура:</legend>
+                        <p>
+                            <input type="checkbox" name="hotel-search-pool" id="hotel-search-pool" value="1" checked>
+                            <label for="hotel-search-pool">Бассейн</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="hotel-search-parking" id="hotel-search-parking" value="1">
+                            <label for="hotel-search-parking">Парковка</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="hotel-search-wifi" id="hotel-search-wifi" value="1">
+                            <label for="hotel-search-wifi">Wi-Fi</label>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Тип жилья:</legend>
+                        <p>
+                            <input type="checkbox" name="hotel-search-hotel" id="hotel-search-hotel" value="1" checked>
+                            <label for="hotel-search-hotel">Гостиница</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="hotel-search-motel" id="hotel-search-motel" value="1" checked>
+                            <label for="hotel-search-motel">Мотель</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="hotel-search-apartment" id="hotel-search-apartment" value="1" checked>
+                            <label for="hotel-search-apartment">Апартаменты</label>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Стоимость в сутки (Р):</legend>
+                        <p>
+                            <label for="hotel-search-price-from">От</label>
+                            <input type="text" name="hotel-search-price-from" id="hotel-search-price-from" value="0">
+                        </p>
+                        <p>
+                            <label for="hotel-search-price-to">До</label>
+                            <input type="text" name="hotel-search-price-to" id="hotel-search-price-to" value="3000">
+                        </p>
+                        <p>
+                            <label for="hotel-search-price-to" class="visualy-hidden">Интервал цен</label>
+                            <input type="range" min="0" max="3000" value="0" name="hotel-search-range" id="hotel-search-range">
+                        </p>
+                        <p>
+                            <input type="submit" name="hotel-search-submit" value="Показать">
+                        </p>
+                    </fieldset>
+                </form>
             </section>
 
             <section class="hotels-search-sort">
@@ -31,13 +80,13 @@
                     <p class="founded-count">Найдено: 3</p>
                     <p>Сортировка:</p>
                     <ul class="hotels-sort">
-                        <li><a href="#">По цене</a></li>
-                        <li><a href="#">По типу</a></li>
-                        <li><a href="#">По рейтингу</a></li>
+                        <li><button class="hotels-sort-button active">По цене</button></li>
+                        <li><button class="hotels-sort-button">По типу</button></li>
+                        <li><button class="hotels-sort-button">По рейтингу</button></li>
                     </ul>
                     <ul class="hotels-sort-direction">
-                        <li class="hotels-sort-ascending"><a href="#"></a></li>
-                        <li class="hotels-sort-descending"><a href="#"></a></li>
+                        <li><button class="hotels-sort-ascending active">Сотрировка по возрастанию</button></li>
+                        <li><button class="hotels-sort-descending">Сотрировка по убыванию</button></li>
                     </ul>
             </section>
 

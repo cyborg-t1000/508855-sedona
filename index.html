@@ -72,7 +72,28 @@
                 <p>Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
                 <button>Поиск гостиницы в Седоне</button>
                 <div class="main-hotels-form">
-                    <!-- тут будет форма -->
+                    <form class="index-search" action="hotels.html" method="get">
+                        <p>
+                            <label for="index-search-date-start">Дата заезда:</label>
+                            <input type="text" name="index-search-date-start" id="index-search-date-start" value="24 апреля 2017">
+                        </p>
+                        <p>
+                            <label for="index-search-date-end">Дата выезда:</label>
+                            <input type="text" name="index-search-date-end" id="index-search-date-end" value="4 июля 2017">
+                        </p>
+                        <p>
+                            <label for="index-search-adults">Взрослые:</label>
+                            <input type="text" name="index-search-adults" id="index-search-adults" value="2">
+                        </p>
+                        <p>
+                            <label for="index-search-children">Дети:</label>
+                            <input type="text" name="index-search-children" id="index-search-children" value="0">
+                        </p>
+                        <p>
+                            <input type="submit" name="index-search-submit" value="Найти">
+                        </p>
+
+                    </form>
                 </div>
                 <div class="map"><img src="img/map.jpg" width="1200" height="593" alt="Карта Аризоны"></div>
             </section>
