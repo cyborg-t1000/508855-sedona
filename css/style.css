@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  font: inherit;
+  font-size: 21px;
+  line-height: 25px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  background-color: #000000;
+  border: none;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.hotel-search-button {
+  background-color: #766357;
+}
+
+.hotel-search-button:hover {
+  background-color: #604e43;
+}
+
+.hotel-search-button:active {
+  background-color: #503e33;
+}
+
+.main-hotels-button {
+  background-color: #81b3d2;
+}
+
+.main-hotels-button:hover {
+  background-color: #669ec0;
+}
+
+.main-hotels-button:active {
+  background-color: #5496bd;
+}
+
+.index-page {
+  text-align: center;
+}
+
+.main-navigation {
+  font-weight: 700;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.main-menu {
+  list-style: none;
+}
+
+.main-menu a {
+  color: #000000;
+}
+
+.main-menu a:hover,
+.main-menu a:focus {
+  color: #81b3d2;
+}
+
+.main-menu a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.features h2 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.features-list {
+  list-style: none;
+  line-height: 21px;
+}
+
+.feature-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.hotel-search {
+  line-height: 24px;
+}
+
+.hotel-search h2 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.index-search {
+  font-weight: 700;
+}
+
+.index-search input {
+  font: inherit;
+  text-transform: inherit;
+
+  background-color: #f2f2f2;
+  border: 2px solid #f2f2f2;
+}
+
+.index-search input:hover {
+  background-color: #ebebeb;
+  border-color: #ebebeb;
+}
+
+.index-search input:focus {
+  background-color: transparent;
+  border-color: #e5e5e5;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.social-button {
+  color: #ffffff;
+}
+
+.footer-copyright {
+  text-align: center;
+}
+
+.footer-tag {
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  font-weight: 700;
+}
