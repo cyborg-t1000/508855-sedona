@@ -253,18 +253,18 @@ a {
   list-style: none;
 }
 
-.hotel-name {
+.catalog-hotel a {
   color: #000000;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
 }
 
-.hotel-name:hover {
+.catalog-hotel a:hover {
   color: #81b3d2;
 }
 
-.hotel-name:active {
+.catalog-hotel a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
