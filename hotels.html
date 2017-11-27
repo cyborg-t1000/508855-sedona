@@ -21,56 +21,58 @@
         </header>
         <main>
             <h1 class="visually-hidden">Гостиницы</h1>
-            
+
             <section class="hotels-search-form">
                 <h2 class="visually-hidden">Фильтр гостиниц</h2>
                 <form class="hotel-search" action="https://echo.htmlacademy.ru" method="get">
                     <fieldset>
                         <legend>Инфраструктура:</legend>
-                        <p>
-                            <input type="checkbox" name="hotel-search-infrastructure" id="hotel-search-pool" value="pool" checked>
-                            <label for="hotel-search-pool">Бассейн</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" name="hotel-search-infrastructure" id="hotel-search-parking" value="parking">
-                            <label for="hotel-search-parking">Парковка</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" name="hotel-search-infrastructure" id="hotel-search-wifi" value="wifi">
-                            <label for="hotel-search-wifi">Wi-Fi</label>
-                        </p>
+                        <ul>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel-search-infrastructure" id="hotel-search-pool" value="pool" checked>
+                                <label for="hotel-search-pool">Бассейн</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel-search-infrastructure" id="hotel-search-parking" value="parking">
+                                <label for="hotel-search-parking">Парковка</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel-search-infrastructure" id="hotel-search-wifi" value="wifi">
+                                <label for="hotel-search-wifi">Wi-Fi</label>
+                            </li>
+                        </ul>
                     </fieldset>
                     <fieldset>
                         <legend>Тип жилья:</legend>
-                        <p>
-                            <input type="checkbox" name="hotel-search-type" id="hotel-search-hotel" value="hotel" checked>
-                            <label for="hotel-search-hotel">Гостиница</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" name="hotel-search-type" id="hotel-search-motel" value="motel" checked>
-                            <label for="hotel-search-motel">Мотель</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" name="hotel-search-type" id="hotel-search-apartment" value="apartment" checked>
-                            <label for="hotel-search-apartment">Апартаменты</label>
-                        </p>
+                        <ul>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel-search-type" id="hotel-search-hotel" value="hotel" checked>
+                                <label for="hotel-search-hotel">Гостиница</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel-search-type" id="hotel-search-motel" value="motel" checked>
+                                <label for="hotel-search-motel">Мотель</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel-search-type" id="hotel-search-apartment" value="apartment" checked>
+                                <label for="hotel-search-apartment">Апартаменты</label>
+                            </li>
+                        </ul>
                     </fieldset>
                     <fieldset>
                         <legend>Стоимость в сутки (Р):</legend>
                         <p>
                             <label for="hotel-search-price-from">От</label>
-                            <input type="text" name="hotel-search-price-from" id="hotel-search-price-from" value="0">
-                        </p>
-                        <p>
+                            <input class="hotel-search-price" type="text" name="hotel-search-price-from" id="hotel-search-price-from" value="0">
                             <label for="hotel-search-price-to">До</label>
-                            <input type="text" name="hotel-search-price-to" id="hotel-search-price-to" value="3000">
+                            <input class="hotel-search-price" type="text" name="hotel-search-price-to" id="hotel-search-price-to" value="3000">
                         </p>
                         <p>
                             <label for="hotel-search-price-to" class="visualy-hidden">Интервал цен</label>
                             <input type="range" min="0" max="3000" value="0" name="hotel-search-range" id="hotel-search-range">
                         </p>
                         <p>
-                            <input type="submit" name="hotel-search-submit" value="Показать">
+                          <button class="hotel-search-button" type="submit">Показать</button>
                         </p>
                     </fieldset>
                 </form>
@@ -78,12 +80,11 @@
 
             <section class="hotels-search-sort">
                 <h2 class="visually-hidden">Сортировка результатов поиска</h2>
-                    <p class="founded-count">Найдено: 3</p>
-                    <p>Сортировка:</p>
+                    <p>Найдено: 3<span class="sort-title">Сортировка:</span>
                     <ul class="hotels-sort">
-                        <li><a href="#" class="hotels-sort-button active">По цене</a></li>
-                        <li><a href="#" class="hotels-sort-button">По типу</a></li>
-                        <li><a href="#" class="hotels-sort-button">По рейтингу</a></li>
+                        <li><a href="#" class="active">По цене</a></li>
+                        <li><a href="#">По типу</a></li>
+                        <li><a href="#">По рейтингу</a></li>
                     </ul>
                     <ul class="hotels-sort-direction">
                         <li><a href="#" class="hotels-sort-ascending active">Сотрировка по возрастанию</a></li>
@@ -94,7 +95,7 @@
             <section class="hotels-search-results">
                 <h2 class="visually-hidden">Результаты поиска</h2>
                     <ul class="hotels-catalog">
-                        
+
                         <li class="catalog-item">
                             <div class="catalog-image">
                                 <a href="hotel.html">
@@ -102,7 +103,7 @@
                                 </a>
                             </div>
                             <div class="catalog-description">
-                                <h3 class="catalog-hotel"><a href="hotel.html">Amara Resort &amp; Spa</a></h3>
+                                <h3 class="catalog-hotel"><a class="hotel-name" href="hotel.html">Amara Resort &amp; Spa</a></h3>
                                 <div class="catalog-type">
                                     <p>Гостиница</p>
                                     <a href="hotel.html" class="catalog-hotel-button">Подробнее</a>
@@ -125,7 +126,7 @@
                                 </a>
                             </div>
                             <div class="catalog-description">
-                                <h3 class="catalog-hotel"><a href="hotel.html">Desert Quail Inn</a></h3>
+                                <h3 class="catalog-hotel"><a class="hotel-name" href="hotel.html">Desert Quail Inn</a></h3>
                                 <div class="catalog-type">
                                     <p>Мотель</p>
                                     <a href="hotel.html" class="catalog-hotel-button">Подробнее</a>
@@ -148,7 +149,7 @@
                                 </a>
                             </div>
                             <div class="catalog-description">
-                                <h3 class="catalog-hotel"><a href="hotel.html">Villas At Poco Diablo</a></h3>
+                                <h3 class="catalog-hotel"><a class="hotel-name" href="hotel.html">Villas At Poco Diablo</a></h3>
                                 <div class="catalog-type">
                                     <p>Апартаменты</p>
                                     <a href="hotel.html" class="catalog-hotel-button">Подробнее</a>
@@ -167,8 +168,8 @@
                     </ul>
             </section>
 
-        </main>   
-        
+        </main>
+
         <footer class="main-footer">
             <p class="footer-tag">#visitsedona</p>
             <div class="footer-social">

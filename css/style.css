@@ -158,3 +158,147 @@ a {
   text-align: center;
   font-weight: 700;
 }
+
+.hotels-search-form {
+  background-image: url("../img/filter-background.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-color: #2b3d47;
+  color: #ffffff;
+}
+
+.hotel-search fieldset {
+  line-height: 21px;
+  border: none;
+}
+
+.hotel-search legend {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.hotel-search ul {
+  list-style: none;
+  line-height: 47px;
+}
+
+.hotel-search-price {
+  font: inherit;
+  text-transform: inherit;
+
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  text-align: center;
+  line-height: 21px;
+}
+
+.hotel-search-button {
+  font: inherit;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-weight: 400;
+
+  background-color: transparent;
+  border: 2px solid #ffffff;
+}
+
+.hotel-search-button:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.hotels-search-sort p {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.sort-title {
+  font-size: 12px;
+  line-height: 63px;
+  font-weight: 400;
+}
+
+.hotels-search-sort ul {
+  list-style: none;
+}
+
+.hotels-search-sort a {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.hotels-search-sort a:hover {
+  color: #81b3d2;
+}
+
+.hotels-search-sort a:active {
+  color: #000000;
+  border-bottom-color: transparent;
+}
+
+.hotels-search-sort a.active {
+  color: #81b3d2;
+  border-bottom-color: transparent;
+}
+
+.hotels-catalog {
+  list-style: none;
+}
+
+.hotel-name {
+  color: #000000;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.hotel-name:hover {
+  color: #81b3d2;
+}
+
+.hotel-name:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-hotel-button {
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.catalog-hotel-button:hover {
+  background-color: #669ec0;
+}
+
+.catalog-hotel-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+.catalog-book-button {
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #766357;
+}
+
+.catalog-book-button:hover {
+  background-color: #604e43;
+}
+
+.catalog-book-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+}
+
+.catalog-rating-digits {
+  color: #666666;
+  background-color: #f2f2f2;
+}
