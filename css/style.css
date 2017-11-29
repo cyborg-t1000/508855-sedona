@@ -20,7 +20,7 @@ a {
 .button {
   font: inherit;
   font-size: 21px;
-  line-height: 25px;
+  line-height: 26px;
   text-align: center;
   color: #ffffff;
   vertical-align: middle;
@@ -35,15 +35,15 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.hotel-search-button {
+.index-search-button {
   background-color: #766357;
 }
 
-.hotel-search-button:hover {
+.index-search-button:hover {
   background-color: #604e43;
 }
 
-.hotel-search-button:active {
+.index-search-button:active {
   background-color: #503e33;
 }
 
